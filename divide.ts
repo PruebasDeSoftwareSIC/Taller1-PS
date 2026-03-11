@@ -2,11 +2,11 @@
  * Returns the division of two numbers.
  */
 function divide(a: number, b: number): number {
-  try {
-    return a / b;
-  } catch (error) {
+  if (b === 0) {
     throw new Error("Invalid division operation");
   }
+
+  return a / b;
 }
 
 // Expose to window so the HTML script can call it
