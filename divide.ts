@@ -5,7 +5,6 @@ function divide(a: number, b: number): number {
   try {
     return a / b;
   } catch (error) {
-    console.error("Error occurred while dividing numbers:", error);
     throw new Error("Invalid division operation");
   }
 }
